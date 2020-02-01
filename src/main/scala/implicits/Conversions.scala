@@ -1,15 +1,13 @@
 package implicits
 
 object Conversions extends App {
-  println("-" * 50)
 
   final case class Apple(weight: Int, colour: String)
   final case class Orange(weight: Int)
 
   def printOrange(orange: Orange): Unit = {
-    println("-" * 50)
+    println("\u2500" * 50)
     println(orange)
-    println("-" * 50)
   }
 
   // implicit conversion (implicit implicit)
@@ -23,12 +21,11 @@ object Conversions extends App {
     )
   )
 
-  println("-" * 50)
-
   // explicit conversion (explicit implicit, or extension methods),
   // can avoid to declare the following method if the wrapper AppleOps class is declared as implicit.
   // The name of the method and the one of the class don't have to be equal.
   // The class extends AnyVal to improve performance
+  // https://docs.scala-lang.org/overviews/core/value-classes.html
   //
   //  implicit def appleOps(apple: Apple): AppleOps = {
   //    AppleWrapper(apple)
@@ -45,5 +42,5 @@ object Conversions extends App {
     ).toOrange
   )
 
-  println("-" * 50)
+  println("\u2500" * 50)
 }
