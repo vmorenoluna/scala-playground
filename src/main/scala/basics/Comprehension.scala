@@ -1,4 +1,4 @@
-package comprehension
+package basics
 
 object Comprehension extends App {
 
