@@ -1,4 +1,4 @@
-package cats.typeclass
+package catslib.typeclass.pattern
 
 // Define a very simple JSON AST
 sealed trait Json

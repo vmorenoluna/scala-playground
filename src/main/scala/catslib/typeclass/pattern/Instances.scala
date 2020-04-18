@@ -1,6 +1,6 @@
-package cats.typeclass
+package catslib.typeclass.pattern
 
-import cats.typeclass.TypeClass.JsonWriter
+import TypeClass.JsonWriter
 
 object JsonWriterInstances {
 

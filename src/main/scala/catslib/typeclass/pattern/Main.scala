@@ -1,7 +1,7 @@
-package cats.typeclass
+package catslib.typeclass.pattern
 
-import JsonWriterInstances._
 import JsonSyntax._
+import JsonWriterInstances._
 
 object TypeClassMain extends App{
 

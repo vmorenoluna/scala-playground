@@ -1,6 +1,6 @@
-package cats.typeclass
+package catslib.typeclass.pattern
 
-import cats.typeclass.TypeClass.JsonWriter
+import TypeClass.JsonWriter
 
 //  A type class interface is any functionality we expose to users. Interfaces are
 //  generic methods that accept instances of the type class as implicit parameters.

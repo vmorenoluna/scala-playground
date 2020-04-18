@@ -1,4 +1,4 @@
-package cats.typeclass
+package catslib.typeclass.pattern
 
 object TypeClass {
 
