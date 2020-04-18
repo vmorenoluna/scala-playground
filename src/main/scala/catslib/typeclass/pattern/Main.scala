@@ -10,7 +10,7 @@ object TypeClassMain extends App{
   // to users.
 
   // Conversion through Interface Object
-  Json.toJson(Person("Dave", "dave@example.com"))
+  JsonInterface.toJson(Person("Dave", "dave@example.com"))
 
   // Conversion through Interface Sintax
   Person("Dave", "dave@example.com").toJson
