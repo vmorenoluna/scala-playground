@@ -2,9 +2,10 @@ package catslib.typeclass
 
 import java.time.Instant
 import java.time.temporal.ChronoUnit.HOURS
-import cats.kernel.Eq
-import cats.implicits._
 import catslib.typeclass.pattern.Person
+import cats.kernel.Eq
+import cats.instances.long._
+import cats.syntax.eq._
 
 object EqObject extends App {
 
