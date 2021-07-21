@@ -13,7 +13,6 @@ object EqObject extends App {
     Eq.instance[Instant] {
       (instant1, instant2) =>
         // compare longs with cats eq istance for long
-        // "equals" would work as well
         instant1.getEpochSecond === instant2.getEpochSecond
     }
 
